@@ -1,0 +1,36 @@
+/*
+Theme Name: Mike's Portfolio
+Author: Mike
+Version: 1.0
+*/
+
+body{
+    color:red;
+    margin:0px;
+}
+
+.about, .projects{
+height:100vh;
+position: relative;
+transform: translateX(-100%);
+}
+
+.about{
+    background-color:red;
+}
+
+.projects{
+    background-color:lightblue;
+}
+
+.slide-in, .slide-out{
+    transition: all .75s ease;
+}
+.slide-in{
+    transform: translateX(0%);
+}
+
+.slide-out{
+    transform: translateX(-100%);
+
+}

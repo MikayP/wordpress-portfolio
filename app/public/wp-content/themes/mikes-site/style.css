@@ -1,0 +1,40 @@
+/*
+Theme Name: Mike's Portfolio
+Author: Mike
+Version: 1.0
+*/
+body {
+  color: red;
+  margin: 0px;
+}
+
+.about, .projects {
+  height: 100vh;
+  position: relative;
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+}
+
+.about {
+  background-color: red;
+}
+
+.projects {
+  background-color: lightblue;
+}
+
+.slide-in, .slide-out {
+  -webkit-transition: all .75s ease;
+  transition: all .75s ease;
+}
+
+.slide-in {
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
+}
+
+.slide-out {
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+}
+/*# sourceMappingURL=style.css.map */
