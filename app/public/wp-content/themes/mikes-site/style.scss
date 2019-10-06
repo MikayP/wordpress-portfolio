@@ -9,28 +9,57 @@ body{
     margin:0px;
 }
 
-.about, .projects{
+#all-sections{
+    display:inline-block;
+}
+.main, .about, .professional, .fun-stuff, .blog, .contact{
 height:100vh;
 position: relative;
-transform: translateX(-100%);
+display:inline;
+
 }
 
 .about{
+    
     background-color:red;
+    transform: translateX(-100%);
 }
 
-.projects{
-    background-color:lightblue;
+.professional{
+    background-color:black;
+    transform: translateX(-200%);
 }
 
-.slide-in, .slide-out{
+.fun-stuff{
+    background-color:black;
+    transform: translateX(+100%);
+}
+
+.blog{
+    background-color:blue;
+    transform: translateX(+200%);
+}
+
+.contact{
+    background-color:blue;
+    transform: translateX(+300%);
+}
+
+
+.slide-in, .slide-out,.slide-right{
     transition: all .75s ease;
 }
 .slide-in{
     transform: translateX(0%);
 }
-
+.slide-right{
+    transform: translateX(+100%);
+}
+.slide-far-right{
+    transform: translateX(+200%);
+}
 .slide-out{
     transform: translateX(-100%);
 
 }
+

@@ -8,22 +8,47 @@ body {
   margin: 0px;
 }
 
-.about, .projects {
+#all-sections {
+  display: inline-block;
+}
+
+.main, .about, .professional, .fun-stuff, .blog, .contact {
   height: 100vh;
   position: relative;
-  -webkit-transform: translateX(-100%);
-          transform: translateX(-100%);
+  display: inline;
 }
 
 .about {
   background-color: red;
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
 }
 
-.projects {
-  background-color: lightblue;
+.professional {
+  background-color: black;
+  -webkit-transform: translateX(-200%);
+          transform: translateX(-200%);
 }
 
-.slide-in, .slide-out {
+.fun-stuff {
+  background-color: black;
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+}
+
+.blog {
+  background-color: blue;
+  -webkit-transform: translateX(200%);
+          transform: translateX(200%);
+}
+
+.contact {
+  background-color: blue;
+  -webkit-transform: translateX(300%);
+          transform: translateX(300%);
+}
+
+.slide-in, .slide-out, .slide-right {
   -webkit-transition: all .75s ease;
   transition: all .75s ease;
 }
@@ -31,6 +56,16 @@ body {
 .slide-in {
   -webkit-transform: translateX(0%);
           transform: translateX(0%);
+}
+
+.slide-right {
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+}
+
+.slide-far-right {
+  -webkit-transform: translateX(200%);
+          transform: translateX(200%);
 }
 
 .slide-out {
